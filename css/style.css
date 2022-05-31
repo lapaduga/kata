@@ -100,10 +100,216 @@ h6 {
   font-weight: 600;
 }
 
-.main {
+.main__body {
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.main__col.main__col--image {
+  width: 54.5%;
+  background: url("../img/bg.jpg") center/cover no-repeat;
+}
+
+.main__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 75px;
+}
+
+.main__addition {
+  font-size: 18px;
+  color: #637583;
+  margin-bottom: 56px;
+}
+
+.main__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -18px 50px -18px;
+}
+
+.main__btn {
+  font-size: 14px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 16px;
+  min-height: 44px;
+  width: 100%;
+  -webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+  transition: -webkit-box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  -webkit-box-shadow: 0px 0px 0px transparent;
+          box-shadow: 0px 0px 0px transparent;
+  margin: 0 18px;
+}
+
+.main__btn img {
+  max-width: 20px;
+  max-height: 20px;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.main__btn--fb {
+  background-color: #255b9b;
+}
+
+@media (any-hover: hover) {
+  .main__btn--fb:hover {
+    -webkit-box-shadow: 0px 0px 20px rgba(37, 90, 155, 0.5);
+            box-shadow: 0px 0px 20px rgba(37, 90, 155, 0.5);
+  }
+}
+
+.main__btn--in {
+  background-color: #0076b6;
+}
+
+@media (any-hover: hover) {
+  .main__btn--in:hover {
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 118, 182, 0.5);
+            box-shadow: 0px 0px 20px rgba(0, 118, 182, 0.5);
+  }
+}
+
+.main__divider {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.main__divider p {
+  position: relative;
+  display: inline-block;
+  min-width: 246px;
+}
+
+.main__divider p:after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #e5e5e5;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main__divider span {
+  display: inline-block;
+  min-width: 30px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  top: 44px;
+  left: 50px;
+  width: 142px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -18px 64px -18px;
+}
+
+.form__label {
+  margin: 0 18px;
+  width: 100%;
+  border-radius: 0px 0px 8px 8px;
+  border: 1px solid #efefef;
+  -webkit-transition: border-radius 0.3s ease 0s, border-color 0.3s ease 0s;
+  transition: border-radius 0.3s ease 0s, border-color 0.3s ease 0s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 12px;
+}
+
+.form__label span {
+  font-size: 14px;
+  color: #8698a4;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.form__label:focus-within, .form__label:hover {
+  border-radius: 0px 8px 0px 0px;
+  border-left: 1px solid #3597fc;
+}
+
+.form__input {
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.form__addition {
+  font-size: 14px;
+  color: #637583;
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 1480px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #2a465b;
+  font-size: 26px;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  color: #2a465b;
+  font-size: 20px;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
 }
 
 body {
   font-family: 'Barlow', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
 }
